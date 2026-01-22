@@ -66,6 +66,8 @@ function loadAnalysisStep(topic){
 	$('#step3').show();
 	createMap(postcodeData);
 	setForData(topic);
+
+	console.log(map.t)
 }
 
 function setForData(topic){
@@ -119,7 +121,7 @@ function generateDataDownload(){
 	var encodedUri = encodeURI(csvContent);
 	var link = document.createElement("a");
 	link.setAttribute("href", encodedUri);
-	link.setAttribute("download", "community_lens.csv");
+	link.setAttribute("download", "community_lens_2025.csv");
 	document.body.appendChild(link);
 	link.click();
 }
@@ -176,6 +178,12 @@ function init(){
 		let topic = $(this).attr('data-id');
 		loadAnalysisStep(topic);
 	});
+
+	$('.btn-datadownload').on('click',function(){
+		let topic = $(this).attr('data-id');
+		loadAnalysisStep(topic);
+	});
+
 }
 
 var postcodeData = [];

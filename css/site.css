@@ -46,13 +46,14 @@ p {
 }
 
 
- ul {
+ul {
   list-style-type: none;
   padding-left: 0;
  }
 
- a {
+a {
 	color:black;
+
 }
 
 /* front page */
@@ -61,12 +62,19 @@ p {
 	font-size:1.6em;
 }
 
+.frontpagemaintitle {
+	font-size:2em;
+}
+
 .frontpagesubtitle {
 	font-size:1.1em;
 }
 
 #main-description {
-	margin-top:100px;
+	margin-top:50px;
+	margin-left:50px;
+	margin-right:100px;
+
 }
 
 .frontpage-section {
@@ -133,9 +141,6 @@ p {
 	min-height:600px;
 }
 
-/*analysis page */
-
-
 #step3 {
 	margin-top:30px;
 }
@@ -195,6 +200,8 @@ p {
 
  .link-highlight {
 	text-decoration: underline;
+	text-decoration-color: blue;
+	color: darkblue;
 }
 
 /* about page */
