@@ -3,7 +3,7 @@ import json
 import numpy as np
 
 postcodeFile = 'data/ONSPD_MAY_2025/Data/ONSPD_MAY_2025_UK.csv'
-imdFile = 'data/Indices_of_Deprivation-2025-data_download-file-postcode_join copy.csv'
+imdFile = 'data/Indices_of_Deprivation-2025-data_download-file-postcode_join - REMOVED SPACES.csv'
 
 postcode_imd = {}
 processedData = {}
